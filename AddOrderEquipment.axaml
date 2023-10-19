@@ -1,0 +1,33 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:avaloniaApplication8="clr-namespace:AvaloniaApplication8"
+        xmlns:models="clr-namespace:AvaloniaApplication7.Models"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaApplication8.AddOrderEquipment"
+        Title="AddOrderEquipment">
+        <StackPanel>
+               
+                <DataGrid x:Name="GroupsDataGrid2"
+                          x:DataType="models:orderEquipment"
+                          AutoGenerateColumns="False"
+                          IsReadOnly="True"
+                          GridLinesVisibility="All"
+                          BorderThickness="1"
+                          Margin="0,20"
+                          BorderBrush="Gray"
+                          Height="100">
+                        <DataGrid.Columns>
+                                <DataGridTextColumn Header="Id"  Binding="{Binding Id}"/>
+                                <DataGridTextColumn Header="Client"  Binding="{Binding Client }"/>
+                                <DataGridTextColumn Header="Worker"  Binding="{Binding Worker }"/>
+                                <DataGridTextColumn Header="TypeEquipment"  Binding="{Binding TypeEquip }"/>
+                                <DataGridTextColumn Header="Typefault"  Binding="{Binding Typefault }"/>
+                                
+                        </DataGrid.Columns>
+                           
+                </DataGrid> 
+               
+        </StackPanel>
+</Window>
