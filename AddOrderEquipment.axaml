@@ -4,30 +4,71 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:avaloniaApplication8="clr-namespace:AvaloniaApplication8"
         xmlns:models="clr-namespace:AvaloniaApplication7.Models"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" Width="600" Height="300"
         x:Class="AvaloniaApplication8.AddOrderEquipment"
         Title="AddOrderEquipment">
-        <StackPanel>
-               
-                <DataGrid x:Name="GroupsDataGrid2"
-                          x:DataType="models:orderEquipment"
-                          AutoGenerateColumns="False"
-                          IsReadOnly="True"
-                          GridLinesVisibility="All"
-                          BorderThickness="1"
-                          Margin="0,20"
-                          BorderBrush="Gray"
-                          Height="100">
-                        <DataGrid.Columns>
-                                <DataGridTextColumn Header="Id"  Binding="{Binding Id}"/>
-                                <DataGridTextColumn Header="Client"  Binding="{Binding Client }"/>
-                                <DataGridTextColumn Header="Worker"  Binding="{Binding Worker }"/>
-                                <DataGridTextColumn Header="TypeEquipment"  Binding="{Binding TypeEquip }"/>
-                                <DataGridTextColumn Header="Typefault"  Binding="{Binding Typefault }"/>
-                                
-                        </DataGrid.Columns>
-                           
-                </DataGrid> 
-               
+        <StackPanel
+                Orientation="Vertical"
+                >
+                <Grid>
+                        <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="100"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock 
+                                Text="Заявка №" 
+                                Margin="20"
+                                Grid.Column="0"
+                                Grid.Row="0"
+                                >
+                        </TextBlock>
+                        <Button 
+                                Content="Очистить"
+                                Width="100"
+                                Margin="10"
+                                Grid.Column="1"
+                                Grid.Row="0"
+                                >
+                        </Button>
+                </Grid>
+                <StackPanel
+                        Orientation="Vertical"
+                        
+                        >
+                        <StackPanel 
+                                Orientation="Horizontal"
+                                >
+                                <TextBox 
+                                        Name="tbSerialNumber"
+                                        Watermark="Серийный номер"
+                                        Margin="10"
+                                        VerticalAlignment="Bottom"
+                                ></TextBox>
+                                <TextBox 
+                                        Name="tbEquip"
+                                        Watermark="Название оборудование"
+                                        Margin="10"
+                                        VerticalAlignment="Bottom"
+                                ></TextBox>
+                                <ComboBox 
+                                        Margin="10"
+                                        Width="100"
+                                        Name="cbTypeFault"
+                                        VerticalAlignment="Bottom"
+                                ></ComboBox>
+                        </StackPanel>
+                        <StackPanel 
+                                Margin="10,10,0,0"
+                                Orientation="Horizontal">
+                                <TextBox 
+                                        Watermark="Описание проблемы"
+                                        Name="tbDescription"
+                                        Width="200"
+                                        MinWidth="100"
+                                        MaxHeight="300"
+                                ></TextBox>
+                        </StackPanel>
+                        
+                </StackPanel>
         </StackPanel>
 </Window>

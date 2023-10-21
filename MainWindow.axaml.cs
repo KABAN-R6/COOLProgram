@@ -22,10 +22,10 @@ public partial class MainWindow : Window
         Clients = new List<Client>();
         _connectionSb = new MySqlConnectionStringBuilder
         {
-            Server = "localhost",
-            Database = "test",
-            UserID = "root",
-            Password = "Givig-6812"
+            Server = "10.10.1.24",
+            Database = "pro2",
+            UserID = "user_01",
+            Password = "user01pro"
 
         };
         UpdateData();
@@ -59,7 +59,7 @@ public partial class MainWindow : Window
             connection.Open();
             using (var command = connection.CreateCommand())
             {
-                command.CommandText = "SELECT *FROM clients";
+                command.CommandText = "SELECT *FROM Clients";
                 var reader = command.ExecuteReader();
                 while (reader.Read())
                 {

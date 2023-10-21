@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KABAN\\Desktop\\AvaloniaApplication8\\AvaloniaApplication8\\AvaloniaApplication8.csproj": {}
+    "/home/KHPK.RU/student/Рабочий стол/dont touch/AvaloniaApplication8.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KABAN\\Desktop\\AvaloniaApplication8\\AvaloniaApplication8\\AvaloniaApplication8.csproj": {
+    "/home/KHPK.RU/student/Рабочий стол/dont touch/AvaloniaApplication8.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KABAN\\Desktop\\AvaloniaApplication8\\AvaloniaApplication8\\AvaloniaApplication8.csproj",
+        "projectUniqueName": "/home/KHPK.RU/student/Рабочий стол/dont touch/AvaloniaApplication8.csproj",
         "projectName": "AvaloniaApplication8",
-        "projectPath": "C:\\Users\\KABAN\\Desktop\\AvaloniaApplication8\\AvaloniaApplication8\\AvaloniaApplication8.csproj",
-        "packagesPath": "C:\\Users\\KABAN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KABAN\\Desktop\\AvaloniaApplication8\\AvaloniaApplication8\\obj\\",
+        "projectPath": "/home/KHPK.RU/student/Рабочий стол/dont touch/AvaloniaApplication8.csproj",
+        "packagesPath": "/home/KHPK.RU/student/.nuget/packages/",
+        "outputPath": "/home/KHPK.RU/student/Рабочий стол/dont touch/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\KABAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/KHPK.RU/student/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -93,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.109/RuntimeIdentifierGraph.json"
         }
       }
     }

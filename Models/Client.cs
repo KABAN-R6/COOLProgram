@@ -12,6 +12,6 @@ public class Client
         Id = id;
         this.name = name;
         this.login = login;
-        Password = password;
+        this.Password = password;
     }
 }

@@ -6,11 +6,12 @@
     
     <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
 
-    <Application.Resources>
-        <themes:BundledTheme BaseTheme="Dark" PrimaryColor="Purple" SecondaryColor="Amber"/>
-    </Application.Resources>
     <Application.Styles>
         <StyleInclude Source="avares://Material.Avalonia/Material.Avalonia.Templates.xaml" />
        
     </Application.Styles>
+    <Application.Resources>
+        <themes:BundledTheme BaseTheme="Dark" PrimaryColor="Purple" SecondaryColor="Amber"/>
+    </Application.Resources>
+    
 </Application>

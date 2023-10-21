@@ -19,10 +19,10 @@ public partial class AddOrderEquipment : Window
         orderEquipmentt = new List<orderEquipment>();
         _connectionSb = new MySqlConnectionStringBuilder
         {
-            Server = "localhost",
-            Database = "test",
-            UserID = "root",
-            Password = "Givig-6812"
+            Server = "10.10.1.24",
+            Database = "pro2",
+            UserID = "user_01",
+            Password = "user01pro"
 
         };
         UpdateDataGrid();
@@ -35,7 +35,7 @@ public partial class AddOrderEquipment : Window
             connection.Open();
             using (var command = connection.CreateCommand())
             {
-                command.CommandText = "SELECT *FROM orderEquipment";
+                command.CommandText = "SELECT *FROM OrderEquipment";
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())
@@ -58,6 +58,6 @@ public partial class AddOrderEquipment : Window
             connection.Close();
         }
 
-        GroupsDataGrid2.ItemsSource = orderEquipmentt;
+        //GroupsDataGrid2.ItemsSource = orderEquipmentt;
     }
 }

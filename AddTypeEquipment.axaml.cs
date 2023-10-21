@@ -19,10 +19,10 @@ public partial class AddTypeEquipment : Window
         TypeEquipmentss = new List<TypeEquipments>();
         _connectionSb = new MySqlConnectionStringBuilder
         {
-            Server = "localhost",
-            Database = "test",
-            UserID = "root",
-            Password = "Givig-6812"
+            Server = "10.10.1.24",
+            Database = "pro2",
+            UserID = "user_01",
+            Password = "user01pro"
 
         };
         UpdateDataGrid();
