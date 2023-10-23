@@ -1,0 +1,15 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:themes="clr-namespace:Material.Styles.Themes;assembly=Material.Styles"
+             x:Class="AppOrders.App"
+             RequestedThemeVariant="Default">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+             <Application.Styles>
+                 <StyleInclude Source="avares://Material.Avalonia/Material.Avalonia.Templates.xaml" />
+       
+             </Application.Styles>
+             <Application.Resources>
+                 <themes:BundledTheme BaseTheme="Dark" PrimaryColor="Purple" SecondaryColor="Amber"/>
+             </Application.Resources>
+</Application>

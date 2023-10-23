@@ -1,0 +1,72 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" Width="600" Height="300"
+        x:Class="AppOrders.AddOrderEquipment"
+        Title="AddOrderEquipment">
+    <StackPanel
+                Orientation="Vertical"
+                >
+                <Grid>
+                        <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="100"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock 
+                                Text="Заявка №" 
+                                Margin="20"
+                                Grid.Column="0"
+                                Grid.Row="0"
+                                >
+                        </TextBlock>
+                        <Button 
+                                Content="Очистить"
+                                Width="100"
+                                Margin="10"
+                                Grid.Column="1"
+                                Grid.Row="0"
+                                >
+                        </Button>
+                </Grid>
+                <StackPanel
+                        Orientation="Vertical"
+                        
+                        >
+                        <StackPanel 
+                                Orientation="Horizontal"
+                                >
+                                <TextBox 
+                                        Name="tbSerialNumber"
+                                        Watermark="Серийный номер"
+                                        Margin="10"
+                                        VerticalAlignment="Bottom"
+                                ></TextBox>
+                                <TextBox 
+                                        Name="tbEquip"
+                                        Watermark="Название оборудование"
+                                        Margin="10"
+                                        VerticalAlignment="Bottom"
+                                ></TextBox>
+                                <ComboBox 
+                                        Margin="10"
+                                        Width="100"
+                                        Name="cbTypeFault"
+                                        VerticalAlignment="Bottom"
+                                ></ComboBox>
+                        </StackPanel>
+                        <StackPanel 
+                                Margin="10,10,0,0"
+                                Orientation="Horizontal">
+                                <TextBox 
+                                        Watermark="Описание проблемы"
+                                        Name="tbDescription"
+                                        Width="200"
+                                        MinWidth="100"
+                                        MaxHeight="300"
+                                ></TextBox>
+                        </StackPanel>
+                        
+                </StackPanel>
+        </StackPanel>
+</Window>
