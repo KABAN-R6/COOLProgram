@@ -1,9 +1,4 @@
 is_global = true
-build_property.AvaloniaNameGeneratorIsEnabled = true
-build_property.AvaloniaNameGeneratorBehavior = InitializeComponent
-build_property.AvaloniaNameGeneratorDefaultFieldModifier = internal
-build_property.AvaloniaNameGeneratorFilterByPath = *
-build_property.AvaloniaNameGeneratorFilterByNamespace = *
 build_property.TargetFramework = net7.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
@@ -13,13 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AppOrders
-build_property.ProjectDir = /home/KHPK.RU/student/Рабочий стол/Pro41/AppOrders/AppOrders/
-
-[/home/KHPK.RU/student/Рабочий стол/Pro41/AppOrders/AppOrders/AddOrderEquipment.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
-
-[/home/KHPK.RU/student/Рабочий стол/Pro41/AppOrders/AppOrders/App.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
-
-[/home/KHPK.RU/student/Рабочий стол/Pro41/AppOrders/AppOrders/MainWindow.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+build_property.ProjectDir = C:\Users\Kostya\Desktop\AppOrders\AppOrders\AppOrders\
