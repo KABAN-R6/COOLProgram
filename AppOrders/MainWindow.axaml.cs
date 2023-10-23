@@ -17,10 +17,10 @@ public partial class MainWindow : Window
         Clients = new List<Client>();
         _connectionSb = new MySqlConnectionStringBuilder
         {
-            Server = "10.10.1.24",
+            Server = "localhost",
             Database = "pro2",
-            UserID = "user_01",
-            Password = "user01pro"
+            UserID = "root",
+            Password = "123456"
 
         };
         UpdateData();
